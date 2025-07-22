@@ -10,7 +10,7 @@ import upeu.edu.pe.report_grafico.models.Prestamo;
 
 import java.util.List;
 
-@FeignClient(name = "admin-service", url = "https://ms-admin-core.onrender.com")
+@FeignClient(name = "admin-service")
 public interface PrestamoRepository {
 
     @GetMapping(path = "admin-service/prestamos/all")
