@@ -8,7 +8,7 @@ import upeu.edu.pe.notificacion_service.model.Cliente;
 
 import java.util.List;
 
-@FeignClient(name = "admin-service", url = "https://ms-admin-core.onrender.com")
+@FeignClient(name = "admin-service")
 public interface AdminClient {
     @GetMapping(path = "admin-service/clientes")
     List<Cliente> obtenerClientes();
