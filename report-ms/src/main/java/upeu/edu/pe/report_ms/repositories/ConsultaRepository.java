@@ -10,7 +10,7 @@ import upeu.edu.pe.report_ms.models.Prestamo;
 import java.util.List;
 import java.util.Optional;
 
-@FeignClient(name = "admin-service", url = "https://ms-admin-core.onrender.com")
+@FeignClient(name = "admin-service")
 public interface ConsultaRepository {
 
     @GetMapping(path = "admin-service/consultas/prestamos")
